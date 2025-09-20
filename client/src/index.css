@@ -1,0 +1,6 @@
+@import "tailwindcss";
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #111827; /* Fallback for when the canvas is loading */
+  color: #f9fafb;
+}
