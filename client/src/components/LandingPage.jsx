@@ -68,7 +68,7 @@ const LandingPage = () => {
             <textarea
               value={prompt}
               onChange={(e) => setPrompt(e.target.value)}
-              placeholder="Paste your notes, articles, or complex text here..."
+              placeholder="Paste your notes, articles, or any text here..."
               className="w-full h-56 p-6 bg-black/40 backdrop-blur-sm border border-yellow-200/20 rounded-2xl text-yellow-50 placeholder-yellow-100/50 resize-none focus:outline-none focus:ring-2 focus:ring-yellow-200/40 focus:border-yellow-200/40 transition-all duration-300 text-base leading-relaxed"
               disabled={isLoading}
             />
