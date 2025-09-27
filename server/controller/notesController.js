@@ -121,7 +121,7 @@ export const summarizeNote = async (req, res) => {
 
     // --- Gemini AI Magic Happens Here ---
     // In your summarizeNote function:
-    const model = genAI.getGenerativeModel({ model: "-25-flash" }); // Changed to a standard, reliable model
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" }); // Changed to a standard, reliable model
     const prompt = `${note.content}`;
 
     const result = await model.generateContent(prompt);
