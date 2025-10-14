@@ -70,7 +70,7 @@ export const updateNote = async (req, res) => {
 
     const note = await Note.findByIdAndUpdate(
       req.params.id,
-      { content },
+      { content, summary },
       {
         new: true, // Return the modified document rather than the original
         runValidators: true, // Run model validation on update
