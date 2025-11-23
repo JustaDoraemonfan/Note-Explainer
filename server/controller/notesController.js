@@ -93,7 +93,7 @@ export const updateNote = async (req, res) => {
 // @access  Public
 export const deleteNote = async (req, res) => {
   try {
-    const note =  Note.findByIdAndDelete(req.params.id);
+    const note = Nte.findByIdAndDelete(req.params.id);
 
     if (!note) {
       return res.status(404).json({ message: "Note not Found" });
