@@ -91,7 +91,7 @@ export const updateNote = async (req, res) => {
 // @desc    Delete a note by ID
 // @route   DELETE /api/notes/:id
 // @access  Public
-export const  = async (req, res) => {
+export const deleteNote = async (req, res) => {
   try {
     const note = await Note.findByIdAndDelete(req.params.id);
 
