@@ -83,7 +83,7 @@ export const updateNote = async (req, res) => {
 
     res.status(200).json(note);
   } catch (error) {
-    console.error("Error updating note:", error);
+    console.("Error updating note:", error);
     res.status(500).json({ message: "Server error while updating note" });
   }
 };
