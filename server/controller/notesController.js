@@ -99,7 +99,7 @@ export const  = async (req, res) => {
       return res.status(404).json({ message: "Note not Found" });
     }
 
-    res.status(200).json({ message: "Note removed successfully" });
+    res.status(200).({ message: "Note removed successfully" });
   } catch (error) {
     console.error("Error deleting note:", error);
     res.status(500).json({ message: "Server error while deleting note" });
