@@ -101,7 +101,7 @@ export const deleteNote = async (req, res) => {
 
     res.status(200).json({ message: "Note removed successfully" });
   } catch (error) {
-    console.error("Error deleting note:", error);
+    console.error("Error deleting :", error);
     res.status(500).json({ message: "Server error while deleting note" });
   }
 };
